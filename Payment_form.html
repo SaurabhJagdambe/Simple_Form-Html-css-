@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1>Payment Form</h1>
+        <hr>
+        <h2>Contact Information: </h2>
+        <p>Required Field is denoted by '*'</p>
+        <p>Name: *<input type="text" name="Name" placeholder="Saurabh Jagdambe" required></p>
+        <p>
+        <fieldset>
+            <legend>Gender *</legend>
+        
+                Male <input type="radio" name="gender" id="Male" required>
+                Female <input type="radio" name="gender" id="Female" required>
+       </fieldset>
+        </p>
+        <p>Address : <textarea name="Address" id="Address" cols="100" placeholder="At post xyz.." font-family="Text"rows="7"></textarea></p>
+        <p>Email: *<input type="email" name="email" id="email"  placeholder="Xyz@gmail.com"required></p>
+        <p>Pincode: <input type="number" name="pincode" placeholder="430000"id="pincode"></p>
+        <hr>
+        <h2>Payment Information: </h2>
+        <p>card Type *:<select name="card_type" id="card_type" required>
+            <option value="">--salect a card Type--</option>
+            <option value="Visa" >visa</option>
+            <option value="rupay" >rupay</option>
+            <option value="mastercard" >mastercard</option>
+        </select></p>
+        <p>Card Number *<input type="number" name="Card_number" id="Card_number" placeholder="1234-5678-9100-4575"required></p>
+        <p>Expiration Date:<input type="date" name="Exp_date" id="Exp_date"></p>
+        <p>CVV *: <input type="password" name="cvv" id="cvv" placeholder="123"required></p>
+        <div class="box">
+        <input type="submit" value="Pay Now">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer class ="sj" &copy  >&copy Saurabh Jagdambe </footer>
+    
+    </form>  
+</div>
+</body>
+</html> 
